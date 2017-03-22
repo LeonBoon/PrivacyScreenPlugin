@@ -88,7 +88,7 @@ static UIImageView *imageView;
   BOOL isOrientationLocked = !(supportsPortrait && supportsLandscape);
   
   if (imageName) {
-    imageName = [imageName stringByDeletingPathExtension];
+    return [imageName stringByDeletingPathExtension];
   } else {
     imageName = @"Default";
   }
